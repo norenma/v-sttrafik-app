@@ -2,10 +2,12 @@ import {Component} from '@angular/core';
 import {Platform, ionicBootstrap} from 'ionic-angular';
 import {StatusBar} from 'ionic-native';
 import {DepartureComponent} from './pages/departures/departures.component';
+import {BussstopComponent} from './pages/busstops/busstops.component';
+
 
 
 @Component({
-  template: '<ion-nav [root]="rootPage"></ion-nav>'
+  templateUrl: './root.html'
 })
 
 export class MyApp {
@@ -23,4 +25,4 @@ export class MyApp {
   }
 }
 
-ionicBootstrap(MyApp);
+ionicBootstrap(MyApp, []);
