@@ -4,7 +4,7 @@ import {DepartureComponent} from './departures/departures.component';
 
 
 @Component({
-    template: '<departures></departures><busstops></busstops>',
+    templateUrl: 'build/pages/main.html',
     directives: [DepartureComponent, BusstopComponent]
 
 })

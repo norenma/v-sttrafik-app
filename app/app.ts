@@ -4,6 +4,7 @@ import {StatusBar} from 'ionic-native';
 import {BusstopComponent} from './pages/busstops/busstops.component';
 import {DepartureComponent} from './pages/departures/departures.component';
 import {MainComponent} from './pages/main';
+import {LocationService} from './pages/location/location.service';
 
 
 
@@ -26,4 +27,4 @@ export class MyApp {
   }
 }
 
-ionicBootstrap(MyApp, []);
+ionicBootstrap(MyApp, [LocationService]);

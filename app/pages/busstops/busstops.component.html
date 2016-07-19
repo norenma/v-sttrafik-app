@@ -1,1 +1,3 @@
-busstops
+<ion-select [(ngModel)]="selected">
+      <ion-option *ngFor="let busstop of busstops" value="nes"> {{busstop.name}} </ion-option>
+</ion-select>
