@@ -5,7 +5,8 @@ import {BusstopComponent} from './pages/busstops/busstops.component';
 import {DepartureComponent} from './pages/departures/departures.component';
 import {MainComponent} from './pages/main';
 import {LocationService} from './pages/location/location.service';
-
+import {DeparturesService} from './pages/departures/departures.service';
+import {BusstopsService} from './pages/busstops/busstops.service';
 
 
 @Component({
@@ -27,4 +28,4 @@ export class MyApp {
   }
 }
 
-ionicBootstrap(MyApp, [LocationService]);
+ionicBootstrap(MyApp, [LocationService, DeparturesService, BusstopsService]);
